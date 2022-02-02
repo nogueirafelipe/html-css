@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="shortcut icon" href="Icons8-Windows-8-Food-List-Ingredients.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>Listas ordenadas são aquelas em que a ordem dos itens é importante. Um exemplo de lista ordenada:</p>
+    <ol>
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+        <li>Lavar a louça</li>
+        <li>Responder e-mails</li>
+    </ol>
+    <p>É possível personalizar a formatação da lista ordenada. Na lista acima os itens estão listados em ordem numeral, é possível fazer com que eles sejam listados em algarismos romanos (maiúsculos ou minúsculos) ou em letras (também maiúsculas ou minúsculas) usando o parâmetro type. Por exemplo:</p><!-- 1, I, i, A, a-->
+    <ol type="A">
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+        <li>Lavar a louça</li>
+        <li>Responder e-mails</li>
+    </ol>
+    <ol type="I">
+        <li>Messi</li>
+        <li>C. Ronaldo</li>
+        <li>Lewandoski</li>
+        <li>Neymar</li>
+        <li>Haaland</li>
+    </ol>
+    <p>Além disso, também é possível indicar o início da contagem usando o parâmetro start. Por exemplo:</p>
+    <ol type="1" start="3">
+        <li>Lavar a louça</li>
+        <li>Responder e-mails</li>
+        <li>Estudar HTML5</li>
+        <li>Pausa</li>
+        <li>Voltar a estudar</li>
+    </ol>
+    <h2>Listas Não Ordenadas</h2>
+    <p>As listas não ordenadas são aquelas em que a sequência não importa. Um exemplo de lista não ordenada:</p>
+    <ul>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Pão</li>
+        <li>Amaciante</li>
+        <li>Detergente</li>
+    </ul>
+    <p>Também é possível personalizar a lista não ordenada usando o parâmetro type, para o qual os valores são: disc, circle e square. Exemplo:</p>
+    <ul type="square">
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Pão</li>
+        <li>Amaciante</li>
+        <li>Detergente</li>
+    </ul>
+    <ul type="circle">
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Pão</li>
+        <li>Amaciante</li>
+        <li>Detergente</li>
+    </ul>
+    <h2>Misturando as coisas</h2>
+    <p>É possível configurar listas dentro de outras listas. Além disso, também podemos misturar os dois tipos de listas, ordenadas com não ordenadas. Exemplos:</p>
+    <h4>Lista dos meus jogos favoritos:</h4>
+        <ol>
+            <li>Antigos</li>
+            <ol>
+                <li>Super Mario World</li>
+                <li>The Legend of Zelda: A Link To The Past</li>
+                <li>Pagemaster</li>
+                <li>Super Bomberman 3</li>
+            </ol>
+            <li>Mais recentes</li>
+            <ol>
+                <li>God of War 2</li>
+                <li>Batman Arkham City</li>
+                <li>Assassins Creed Black Flag</li>
+                <li>GTA San Andreas</li>
+            </ol>
+        </ol>
+    <h3>Agora misturando os dois tipos de lista</h3>
+    <h4>Lista dos meus jogos favoritos por console:</h4>
+        <ul type="square">
+            <li>Super Nintendo</li>
+            <ol>
+                <li>Super Mario World</li>
+                <li>The Legend of Zelda: A Link To The Past</li>
+                <li>Pagemaster</li>
+                <li>Super Bomberman 3</li>
+            </ol>
+            <li>Playstation 2</li>
+            <ol>
+                <li>God of War 2</li>
+                <li>God of War</li>
+                <li>GTA San Andreas</li>
+                <li>Spider-Man 2</li>
+            </ol>
+            <li>XBOX 360</li>
+            <ol>
+                <li>Batman Arkham City</li>
+                <li>Assassins Creed Black Flag</li>
+                <li>Batman Arkham Asylum</li>
+                <li>Assassins Creed Brotherhood</li>
+            </ol>
+        </ul>
+    <h2>Lista de Definições</h2>
+    <p>É como se fosse um dicionário, temos os termos e suas descrições. É uma lista sem demarcadores, mas bem útil em alguns casos.</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação utilizada para criar o conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a especificação de estilos em um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para cirar a interatividade em um site.</dd>
+    </dl>
+    
+</body>
+</html>
