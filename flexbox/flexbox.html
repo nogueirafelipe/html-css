@@ -9,11 +9,12 @@
 </head>
 <body>
     <div id="container">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item c3">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
+        <div id="topBar">TOPBAR</div>
+        <div id="content">
+            <div id="sideBar">SIDEBAR</div>
+            <main>MAIN</main>
+        </div>
+        <footer>FOOTER</footer>
     </div>
 </body>
 </html>
@@ -24,7 +25,12 @@ Ele tem propriedades para container e para item.
 A propriedade "display" é usada no container com o valor "flex".
 Toda vez que isso acontece, por padrão, o flexbox vai definir o "flex-direction" (a direção na qual os ítens serão posicionados na tela) para "row".
 Outra propriedade usada no container é "align-items". Com linhas, o alinhamento é vertical, com colunas, o alinhamento é horizontal. Para conseguir também o alinhamento horizontal em linhas (ou vertical em colunas) é usado o "justify-content".
+flex-wrap vai quebrar a linha
 
 Atributos do item:
-flex (é um shorthand de outras três propriedades: flex-grow (diz quanto o elemento pode usar do espaço sobrando para crescer), flex-shrink ())
+flex (é um shorthand de outras três propriedades: flex-grow (diz quanto o elemento pode usar do espaço sobrando para crescer), flex-shrink (por padrão é 1, o elemento vai diminuir de acordo com a necessidade) e flex-basis (diz qual o tamanho inicial do elemento). Ao usar só um valor na shorthand flex, o css vai considerar esse valor como sendo do flex-grow e os outros dois (shrink e basis) serão padrão)
+
+order (muda a ordem dos elementos, por isso não faz sentido colocar em uma classe que englobe todos os ítens ao mesmo tempo (valor 1 joga o elemento para o final, valor -1 joga o elemento para o início))
+
+align-self (é referente ao align-items e o sobrescreve)
 -->
